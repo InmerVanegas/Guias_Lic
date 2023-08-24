@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f5f5f5, #ffffff);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    /* Los coloco en horizontal */
+    background-color: #333;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+    /* Espacio entre los elementos del menu */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilo de footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: white;
+}
+
+.flag-gallery {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* 
+    Distribuyo horizontalmente las banderas
+    en la pantalla y con el wrap, aseguro que
+    se ajusten a la pantalla.
+*/
+
+.flags {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flag {
+    text-align: center;
+    margin: 0 20px;
+    /* A lo mejor agregue un flex-basis con 33% menos algo*/
+}
+
+.flag img {
+    width: 150px;
+    height: auto;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.flag p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+
+/* Estilo para los lugares turisticos */
+.lugar img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+h2,
+h3 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.lugar {
+    margin-bottom: 40px;
+}
+
+/* Estilo para los departamentos */
+.departments-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 0;
+}
+
+.departments-list li {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    background-color: #f7f7f7;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
