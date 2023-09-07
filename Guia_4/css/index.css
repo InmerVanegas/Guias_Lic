@@ -1,0 +1,234 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Utiliza CSS Grid para controlar el diseño */
+.c-type__cars {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Ajusta el estilo de los elementos c-type__car */
+/* Estilos para las tarjetas .c-type__car */
+.c-type__car {
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.titles {
+    text-align: center;
+}
+
+.c-type__car img {
+    max-width: 336px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.c-type__car h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.c-type__car .c-type__description {
+    font-size: 1rem;
+    color: #666;
+    text-align: left;
+}
+
+.c-type__car:hover {
+    transform: scale(1.05);
+    /* Efecto de escala al pasar el cursor sobre la tarjeta */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.c-type__price {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Estilo del menu */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+nav {
+    background-color: #444;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#special-offers .c-type__cars {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+#special-offers .c-type__car {
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0, 3s ease-in-out;
+}
+
+#special-offers .c-type__car img {
+    max-width: 336px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#special-offers .c-type__car h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+#special-offers .c-type__car .c-type__description {
+    font-size: 1rem;
+    color: #666;
+}
+
+#special-offers .c-type__car:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 1em;
+        text-align: center;
+        grid-area: header;
+    }
+
+    header h1 {
+        font-size: 2em;
+        margin: 0;
+    }
+
+    nav {
+        background-color: #444;
+        text-align: center;
+        padding: 0.5rem;
+        grid-area: nav;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 0 10px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    #special-offers {
+        grid-area: special-offers;
+        padding: 1em;
+    }
+
+    #special-offers .c-type__cars,
+    .c-type__cars {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    #special-offers .c-type__car {
+        border: 1px solid #ccc;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center;
+        background-color: #f9f9f9;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    #special-offers .c-type__car img,
+    .c-type__car img {
+        max-width: 336px;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .c-type__car h3 {
+        font-size: 1.5rem;
+        margin: 10px 0;
+    }
+
+    .c-type__car .c-type__description {
+        font-size: 1rem;
+        color: #666;
+    }
+
+    .c-type__car:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .c-type__price {
+        font-size: 22px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1rem;
+        grid-area: footer;
+    }
+}
