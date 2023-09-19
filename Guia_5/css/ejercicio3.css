@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.c-type__container {
+    text-align: center;
+}
+
+.c-type__buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    text-align: center;
+}
+
+.c-type__color__button {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#btnBlue:hover {
+    background-color: blue;
+    color: white;
+}
+
+#btnRed:hover {
+    background-color: red;
+    color: white;
+}
+
+#btnYellow:hover {
+    background-color: yellow;
+    color: black;
+}
+
+#btnGreen:hover {
+    background-color: green;
+    color: white;
+}
