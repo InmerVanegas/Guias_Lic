@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="es" class="h-100">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/styles.css" rel="stylesheet" />
+    <link rel="icon" href="../img/js.png" sizes="32x32" type="image/png" />
+    <title>Objetos en JavaScript</title>
+
+</head>
+
+<body>
+
+    <div class="container bg-white">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom ">
+            <a href="../index.html"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <img src="../img/js.png" class="bi me-2" width="48" height="48">
+                <span class="fs-4">Objetos en JavaScript</span>
+            </a>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="../index.html" class="nav-link">Ejemplo 1</a></li>
+                <li class="nav-item"><a href="ejemplo2.html" class="nav-link">Ejemplo 2</a>
+                </li>
+                <li class="nav-item"><a href="ejemplo3.html" class="nav-link">Ejemplo 3</a></li>
+                <li class="nav-item"><a href="ejemplo4.html" class="nav-link active" aria-current="page">Ejemplo 4</a>
+                </li>
+                <li class="nav-item"><a href="ejemplo5.html" class="nav-link">Ejemplo 5</a></li>
+                <li class="nav-item"><a href="ejemplo6.html" class="nav-link">Ejemplo 6</a></li>
+            </ul>
+        </header>
+    </div>
+    <div class="container-md">
+        <div class="row">
+            <div class="col-6 mx-auto">
+                <div class="shadow-lg p-3 mt-5 bg-body rounded">
+                    <div class="row">
+                        <div class="col-12">
+                            <h4>Registrando libros</h4>
+
+                            <form action="javascript:void(0)" name="frmbook" id="frmbook">
+
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="mb-3">
+                                            <label for="txtautor">
+                                                <i class="bi bi-person"></i> Autor
+                                            </label>
+                                            <input type="text" name="txtautor" id="txtautor" maxlength="60"
+                                                class="form-control" />
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="mb-3">
+                                            <label for="txtautor">
+                                                <i class="bi bi-bookmark"></i> Título
+                                            </label>
+                                            <input type="text" name="txtitulo" id="txtitulo" maxlength="90"
+                                                class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="mb-3">
+                                            <label for="seleditorial">
+                                                <i class="bi bi-bookmarks"></i> Editorial
+                                            </label>
+                                            <select class="form-select" name="seleditorial" size="1">
+                                                <option value="a" selected="selected">Mc-Graw Hill</option>
+                                                <option value="b">Pearson</option>
+                                                <option value="a">Alfa-omega</option>
+                                                <option value="a">Anaya</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="mb-3">
+                                            <label for="seledicion">
+                                                <i class="bi bi-bookmark-plus"></i> Edición
+                                            </label>
+                                            <select name="seledicion" size="1" class="form-select">
+                                                <option value="a" selected="selected">1ra</option>
+                                                <option value="b">2da</option>
+                                                <option value="c">3ra</option>
+                                                <option value="d">4ta</option>
+                                                <option value="e">5ta</option>
+                                                <option value="f">6ta</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="mb-3">
+                                            <label for="txtpais">
+                                                <i class="bi bi-geo-alt"></i> País
+                                            </label>
+                                            <input type="text" name="txtpais" id="txtpais" maxlength="36"
+                                                class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <button id="idBtnEnviar" type="button" class="btn btn-success">
+                                            <i class="bi bi-book"></i> Enviar informacion
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="shadow-lg p-3 mt-5 bg-body rounded">
+                <div class="col-12">
+                    <h4>Libros registrados</h4>
+                    <div id="idDivResultado" class="fs-6 p-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/ejemplo4.js" defer></script>
+
+</body>
+
+</html>

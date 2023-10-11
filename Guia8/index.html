@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es" class="h-100">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="icon" href="img/js.png" sizes="32x32" type="image/png" />
+    <title>Objetos en JavaScript</title>
+
+</head>
+
+<body>
+
+    <div class="container bg-white">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom ">
+            <a href="index.html"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <img src="./img/js.png" class="bi me-2" width="48" height="48">
+                <span class="fs-4">Objetos en JavaScript</span>
+            </a>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Ejemplo 1</a></li>
+                <li class="nav-item"><a href="pages/ejemplo2.html" class="nav-link">Ejemplo 2</a></li>
+                <li class="nav-item"><a href="pages/ejemplo3.html" class="nav-link">Ejemplo 3</a></li>
+                <li class="nav-item"><a href="pages/ejemplo4.html" class="nav-link">Ejemplo 4</a></li>
+                <li class="nav-item"><a href="pages/ejemplo5.html" class="nav-link">Ejemplo 5</a></li>
+                <li class="nav-item"><a href="pages/ejemplo6.html" class="nav-link">Ejemplo 6</a></li>
+                <li class="nav-item"><a href="pages/ejemplo6.html" class="nav-link">Potencia</a></li>
+            </ul>
+        </header>
+    </div>
+    <div class="container-md">
+        <div class="row">
+            <div class="col-6 mx-auto">
+                <div class="shadow-lg p-3 mt-5 bg-body rounded">
+                    <div class="row">
+                        <div class="col-12">
+                            <h4>Calculando el área y perimetro de un rectángulo</h4>
+
+                            <form id="frmrectangulo">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-floating mb-3">
+                                            <input type="number" class="form-control" id="idTxtBase"
+                                                placeholder="Escriba la Base" />
+                                            <label for="idTxtBase">
+                                                <i class="bi bi-123"></i> Escriba la base
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-floating mb-3">
+                                            <input type="number" class="form-control" id="idTxtAltura"
+                                                placeholder="Escriba la Altura" />
+                                            <label for="idTxtAltura">
+                                                <i class="bi bi-123"></i> Escriba la altura
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <button id="idBtnPerimetro" type="button" class="btn btn-success">
+                                            <i class="bi bi-calculator"></i> Perimetro
+                                        </button>
+                                        <button id="idBtnAltura" type="button" class="btn btn-warning">
+                                            <i class="bi bi-calculator"></i> Area
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/ejemplo1.js" defer></script>
+
+</body>
+
+</html>

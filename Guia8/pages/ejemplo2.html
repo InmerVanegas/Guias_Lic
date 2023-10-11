@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="es" class="h-100">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/styles.css" rel="stylesheet" />
+    <link rel="icon" href="../img/js.png" sizes="32x32" type="image/png" />
+    <title>Objetos en JavaScript</title>
+
+</head>
+
+<body>
+
+    <div class="container bg-white">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom ">
+            <a href="../index.html"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <img src="../img/js.png" class="bi me-2" width="48" height="48">
+                <span class="fs-4">Objetos en JavaScript</span>
+            </a>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="../index.html" class="nav-link">Ejemplo 1</a></li>
+                <li class="nav-item"><a href="ejemplo2.html" class="nav-link active" aria-current="page">Ejemplo 2</a>
+                </li>
+                <li class="nav-item"><a href="ejemplo3.html" class="nav-link">Ejemplo 3</a></li>
+                <li class="nav-item"><a href="ejemplo4.html" class="nav-link">Ejemplo 4</a></li>
+                <li class="nav-item"><a href="ejemplo5.html" class="nav-link">Ejemplo 5</a></li>
+                <li class="nav-item"><a href="ejemplo6.html" class="nav-link">Ejemplo 6</a></li>
+            </ul>
+        </header>
+    </div>
+    <div class="container-md">
+        <div class="row">
+            <div class="col-6 mx-auto">
+                <div class="shadow-lg p-3 mt-5 bg-body rounded">
+                    <div class="row">
+                        <div class="col-12">
+                            <h4>Calculando la edad</h4>
+
+                            <form id="frmEdad" name="frmEdad">
+
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="mb-3">
+                                            <label for="idCmbDia">
+                                                <i class="bi bi-calendar-day"></i> Día
+                                            </label>
+                                            <select id="idCmbDia" name="idCmbDia" class="form-select"></select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="mb-3">
+                                            <label for="idCmbMes">
+                                                <i class="bi bi-calendar3"></i> Mes
+                                            </label>
+                                            <select id="idCmbMes" name="idCmbMes" class="form-select"></select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="mb-3">
+                                            <label for="idTxtAnio">
+                                                <i class="bi bi-calendar-event"></i> Año
+                                            </label>
+                                            <input type="number" class="form-control" id="idTxtAnio" name="idTxtAnio"
+                                                placeholder="Escriba la Base" value="2010" />
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <button id="idBtnCalcular" type="button" class="btn btn-success">
+                                            <i class="bi bi-calculator"></i> Calcular
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/ejemplo2.js" defer></script>
+
+</body>
+
+</html>

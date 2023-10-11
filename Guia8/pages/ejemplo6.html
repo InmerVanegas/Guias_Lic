@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="es" class="h-100">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/styles.css" rel="stylesheet" />
+    <link rel="icon" href="../img/js.png" sizes="32x32" type="image/png" />
+    <title>Objetos en JavaScript</title>
+
+</head>
+
+<body>
+
+    <div class="container bg-white">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom ">
+            <a href="../index.html"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <img src="../img/js.png" class="bi me-2" width="48" height="48">
+                <span class="fs-4">Objetos en JavaScript</span>
+            </a>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="../index.html" class="nav-link">Ejemplo 1</a></li>
+                <li class="nav-item"><a href="ejemplo2.html" class="nav-link">Ejemplo 2</a>
+                </li>
+                <li class="nav-item"><a href="ejemplo3.html" class="nav-link">Ejemplo 3</a></li>
+                <li class="nav-item"><a href="ejemplo4.html" class="nav-link">Ejemplo 4</a>
+                </li>
+                <li class="nav-item"><a href="ejemplo5.html" class="nav-link">Ejemplo 5</a>
+                </li>
+                <li class="nav-item"><a href="ejemplo6.html" class="nav-link active" aria-current="page">Ejemplo 6</a>
+                </li>
+            </ul>
+        </header>
+    </div>
+    <div class="container-md">
+        <div class="row">
+            <div class="col-6 mx-auto">
+                <div class="shadow-lg p-3 mt-5 bg-body rounded">
+                    <div class="row">
+                        <div class="col-12">
+                            <h4>Datos del alumnos</h4>
+
+                            <form action="javascript:void(0)" name="frmmat" id="frmmat">
+
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="mb-3">
+                                            <label for="txtname">
+                                                <i class="bi bi-person"></i> Nombres
+                                            </label>
+                                            <input type="text" name="txtname" id="txtname" required="required"
+                                                placeholder="(Su nombre)" class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="mb-3">
+                                            <label for="txtlastname">
+                                                <i class="bi bi-person"></i> Apellidos
+                                            </label>
+                                            <input type="text" name="txtlastname" id="txtlastname" required="required"
+                                                placeholder="(Su apellido)" class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="mb-3">
+                                            <label for="txtanio">
+                                                <i class="bi bi-list-ol"></i> Edad
+                                            </label>
+                                            <input type="number" name="txtage" id="txtage" required="required"
+                                                placeholder="(Su edad)" class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="mb-3">
+                                            <label for="radcolor">
+                                                <i class="bi bi-bookmark"></i> Genero
+                                            </label>
+                                            <br />
+                                            <input type="radio" value="Masculino" id="radioOne" name="chkgender"
+                                                checked="checked" />
+                                            <label for="radioOne" class="radio" chec>Masculino</label>
+                                            <input type="radio" value="Femenino" id="radioTwo" name="chkgender" />
+                                            <label for="radioTwo" class="radio">Femenino</label>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="mb-3">
+                                            <label for="selfab">
+                                                <i class="bi bi-tag"></i> Carrera
+                                            </label>
+                                            <select class="form-select" name="seldegree" id="seldegree">
+                                                <option disabled="" selected="" value="">(Seleccione una carrera)
+                                                </option>
+                                                <option value="Ingeniería en Computación">Ingeniería en Computación
+                                                </option>
+                                                <option value="Ingeniería en Mecatrónica">Ingeniería en Mecatrónica
+                                                </option>
+                                                <option value="Ingeniería Industrial">Ingeniería Industrial</option>
+                                                <option value="Ingeniería Biomédica">Ingeniería Biomédica</option>
+                                                <option value="Ingeniería en Telecomunicaciones">Ingeniería en
+                                                    Telecomunicaciones</option>
+                                                <option value="Ingeniería Aeronáutica">Ingeniería Aeronáutica</option>
+                                                <option value="Licenciatura en Mercadotecnia">Licenciatura en
+                                                    Mercadotecnia</option>
+                                                <option value="Licenciatura en Idiomas">Licenciatura en Idiomas</option>
+                                                <option value="Licenciatura de Diseño Gráfico">Licenciatura de Diseño
+                                                    Gráfico</option>
+                                                <option value="Licenciatura en Comunicación">Licenciatura en
+                                                    Comunicación</option>
+                                                <option value="Licenciatura en Administración de Empresas">Licenciatura
+                                                    en Administración de Empresas</option>
+                                                <option value="Técnico en Computación">Técnico en Computación</option>
+                                                <option value="Técnico en Multimedia">Técnico en Multimedia</option>
+                                                <option value="Técnico en Ortesis y Prótesis">Técnico en Ortesis y
+                                                    Prótesis</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <button id="idBtnEnviar" type="button" class="btn btn-success">
+                                            <i class="bi bi-car-front-fill"></i> Enviar informacion
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="shadow-lg p-3 mt-5 bg-body rounded">
+                <div class="col-12">
+                    <h4>Alumnos registrados</h4>
+                    <div id="idDivResultado" class="fs-6 p-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/ejemplo6.js" defer></script>
+
+</body>
+
+</html>
