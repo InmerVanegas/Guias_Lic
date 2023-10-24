@@ -3,6 +3,7 @@ const constrolIDS = {};
 const newForm = document.getElementById('idNewForm');
 
 const btnCrear = document.getElementById('idBtnCrear');
+const btnValidar = document.getElementById('idBtnValidar');
 const buttonAddElemento = document.getElementById('idBtnAddElement');
 
 const cmbElemento = document.getElementById('idCmbElemento');
@@ -82,10 +83,21 @@ const newRadioCheckbox = function (newElemento) {
 }
 
 const newInput = function (newElemento) {
-    let addElemento =
-        newElemento == "textarea"
-            ? document.createElement('textarea')
-            : document.createElement('input');
+    let addElemento;
+
+    if (newElemento === "color") {
+        addElemento = document.createElement('input');
+        addElemento.setAttribute('type', 'color');
+    } else if (newElemento === "email") {
+        addElemento = document.createElement('input');
+        addElemento.setAttribute('type', 'email');
+    } else {
+        addElemento =
+            newElemento === "textarea"
+                ? document.createElement('textarea')
+                : document.createElement('input');
+        addElemento.setAttribute('type', newElemento);
+    }
 
     addElemento.setAttribute('id', `id${nombreElemento.value}`);
     addElemento.setAttribute('type', newElemento);
@@ -137,6 +149,8 @@ buttonAddElemento.onclick = () => {
                 newSelect();
             } else if (elemento == "radio" || elemento == "checkbox") {
                 newRadioCheckbox(elemento);
+            } else if (elemento === "color" || elemento === "email") {
+                newInput(elemento);
             } else {
                 newInput(elemento);
             }
@@ -145,6 +159,28 @@ buttonAddElemento.onclick = () => {
         alert('Faltan campos por completar');
     }
 };
+
+btnValidar.onclick = () => {
+    const controls = newForm.querySelectorAll('.form-control, .form-check-input, .form-select');
+
+    let valid = true;
+
+    controls.forEach(control => {
+        if (control.type === 'checkbox' || control.type === 'radio' || control.tagName === 'select') {
+            if (!control.checked && control.value === '') {
+                valid = false;
+            }
+        } else if (control.value === '') {
+            valid = false;
+        }
+    });
+
+    if (valid) {
+        alert('La informacion de los controles es valida');
+    } else {
+        alert('Llene todo los campos correctamente');
+    }
+}
 
 document.getElementById('idModal').addEventListener('show.bs.modal', () => {
     tituloElemento.value = "";
